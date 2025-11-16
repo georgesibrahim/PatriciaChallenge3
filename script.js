@@ -133,10 +133,40 @@ function burstConfetti() {
 }
 
 // Download Certificate as Image
-function downloadCertificate() {
-    // Using html2canvas library approach
-    // Since we can't add external libraries easily, we'll use a simpler print-based approach
-    alert('To download the certificate:\n\n1. Click the "Print Certificate" button\n2. In the print dialog, select "Save as PDF" or "Print to PDF"\n3. Save the file to your computer\n\nThis will give you a high-quality PDF of the certificate!');
+async function downloadCertificate() {
+    // Check if we're on mobile
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+        // For mobile, show a helpful guide
+        const message = 'To save your certificate on mobile:\n\n' +
+                       '📱 OPTION 1 (Recommended):\n' +
+                       '1. Take a screenshot of the certificate\n' +
+                       '2. Crop if needed\n' +
+                       '3. Save to your photos\n\n' +
+                       '📄 OPTION 2:\n' +
+                       '1. Click "Print Certificate"\n' +
+                       '2. Select "Save as PDF"\n' +
+                       '3. Choose where to save\n\n' +
+                       'Tip: Screenshot works best on mobile!';
+
+        alert(message);
+    } else {
+        // For desktop, guide to print-to-PDF
+        const message = 'To download the certificate:\n\n' +
+                       '1. Click the "Print Certificate" button below\n' +
+                       '2. In the print dialog, select "Save as PDF"\n' +
+                       '3. Choose your save location\n' +
+                       '4. Click Save\n\n' +
+                       'This will create a high-quality PDF!';
+
+        alert(message);
+
+        // Automatically trigger print dialog after user clicks OK
+        setTimeout(() => {
+            printCertificate();
+        }, 500);
+    }
 }
 
 // Print Certificate
