@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patricia's Epic Run - Legend Status Achieved!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Confetti Container -->
+    <div class="confetti-container" id="confetti"></div>
+
+    <!-- Main Hero Section -->
+    <section class="hero">
+        <div class="trophy-icon">🏆</div>
+        <h1 class="glitch" data-text="LEGEND UNLOCKED!">LEGEND UNLOCKED!</h1>
+        <div class="runner-emoji">🏃‍♀️💨</div>
+        <p class="subtitle">Patricia has officially entered the Hall of Fame</p>
+    </section>
+
+    <!-- Achievement Stats -->
+    <section class="stats-container">
+        <div class="stat-card">
+            <div class="stat-icon">📅</div>
+            <div class="stat-value">Wednesday</div>
+            <div class="stat-label">November 12, 2025</div>
+        </div>
+        <div class="stat-card highlight">
+            <div class="stat-icon">⏱️</div>
+            <div class="stat-value">19:00</div>
+            <div class="stat-label">Minutes of Pure Power</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon">🏁</div>
+            <div class="stat-value">3 KM</div>
+            <div class="stat-label">Conquered Territory</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon">🌇</div>
+            <div class="stat-value">7:30 PM</div>
+            <div class="stat-label">Evening Champion Mode</div>
+        </div>
+    </section>
+
+    <!-- Fun Facts Section -->
+    <section class="fun-facts">
+        <h2>🎯 Achievement Unlocked: Challenge #3</h2>
+        <div class="challenge-badge">
+            <div class="badge-outer">
+                <div class="badge-inner">
+                    <span class="badge-number">3</span>
+                    <span class="badge-text">Step Ahead with G</span>
+                    <span class="badge-subtext">Legends Never Jog Series</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="fun-stats">
+            <div class="fun-stat">
+                <h3>🔥 Average Pace</h3>
+                <p class="big-number">6:20</p>
+                <p class="small-text">per kilometer (That's faster than most people run to the fridge!)</p>
+            </div>
+            <div class="fun-stat">
+                <h3>💪 Calories Burned</h3>
+                <p class="big-number">~240</p>
+                <p class="small-text">Enough to justify a victory croissant... or three!</p>
+            </div>
+            <div class="fun-stat">
+                <h3>👟 Estimated Steps</h3>
+                <p class="big-number">~3,750</p>
+                <p class="small-text">That's 3,750 steps closer to legendary status!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="gallery">
+        <h2>📸 Evidence of Legendary Status</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="WhatsApp Image 2025-11-12 at 7.52.49 PM.jpeg" alt="Patricia's Achievement Photo 1">
+                <div class="image-caption">The Legend in Action</div>
+            </div>
+            <div class="gallery-item">
+                <img src="WhatsApp Image 2025-11-12 at 7.53.49 PM.jpeg" alt="Patricia's Achievement Photo 2">
+                <div class="image-caption">Victory Documented</div>
+            </div>
+            <div class="gallery-item video-item">
+                <video controls>
+                    <source src="WhatsApp Video 2025-11-12 at 7.59.55 PM.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="image-caption">The Journey to Glory</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motivational Quote -->
+    <section class="quote-section">
+        <blockquote>
+            <p>"The journey of a thousand miles begins with a single step, but legends are made with 3,750 steps at 7:30 PM on a Wednesday evening."</p>
+            <footer>- Inspired by Lao Tzu</footer>
+        </blockquote>
+    </section>
+
+    <!-- Certificate Section -->
+    <section class="certificate-section">
+        <h2>🎓 Official Certificate of Legendary Completion</h2>
+        <p class="cert-intro">Click the button to view and download Patricia's official certificate!</p>
+        <button class="view-cert-btn" onclick="showCertificate()">
+            View Certificate 🎖️
+        </button>
+    </section>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCertificate()">&times;</span>
+            <div id="certificate" class="certificate">
+                <div class="cert-border">
+                    <div class="cert-content">
+                        <div class="cert-header">
+                            <div class="cert-emblem">🏆</div>
+                            <h1 class="cert-title">Certificate of Legendary Achievement</h1>
+                            <div class="cert-subtitle">Step Ahead with G - Legends Never Jog Series</div>
+                        </div>
+
+                        <div class="cert-body">
+                            <p class="cert-text">This certifies that</p>
+                            <h2 class="cert-name">PATRICIA</h2>
+                            <p class="cert-text">has successfully completed Challenge #3 with outstanding determination</p>
+
+                            <div class="cert-details">
+                                <div class="cert-detail-item">
+                                    <strong>Distance:</strong> 3 Kilometers
+                                </div>
+                                <div class="cert-detail-item">
+                                    <strong>Time:</strong> 19 Minutes
+                                </div>
+                                <div class="cert-detail-item">
+                                    <strong>Date:</strong> Wednesday, November 12, 2025
+                                </div>
+                                <div class="cert-detail-item">
+                                    <strong>Start Time:</strong> 7:30 PM
+                                </div>
+                            </div>
+
+                            <p class="cert-achievement">
+                                By completing this challenge, Patricia has proven that legends don't jog—they RUN!
+                                This achievement places her among the elite few who choose to push their limits, no matter the time of day.
+                            </p>
+
+                            <div class="cert-footer">
+                                <div class="cert-signature">
+                                    <div class="signature-line"></div>
+                                    <p class="signature-name">Georges Ibrahim</p>
+                                    <p class="signature-title">Challenge Organizer</p>
+                                </div>
+
+                                <div class="cert-seal">
+                                    <div class="seal-circle">
+                                        <div class="seal-inner">
+                                            <div class="seal-text">OFFICIAL</div>
+                                            <div class="seal-icon">⭐</div>
+                                            <div class="seal-year">2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cert-date-issued">
+                                    <p class="date-label">Date Issued</p>
+                                    <div class="date-line"></div>
+                                    <p class="date-value">November 16, 2025</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cert-decoration cert-decoration-tl">🌟</div>
+                        <div class="cert-decoration cert-decoration-tr">🌟</div>
+                        <div class="cert-decoration cert-decoration-bl">🌟</div>
+                        <div class="cert-decoration cert-decoration-br">🌟</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cert-buttons">
+                <button class="download-btn" onclick="downloadCertificate()">Download Certificate 📥</button>
+                <button class="print-btn" onclick="printCertificate()">Print Certificate 🖨️</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>🎉 Keep crushing those challenges, Patricia! 🎉</p>
+            <p class="footer-small">Step Ahead with G - Legends Never Jog Series | Challenge 3 of ∞</p>
+            <p class="footer-small">Website crafted with ❤️ to celebrate legendary achievements</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
