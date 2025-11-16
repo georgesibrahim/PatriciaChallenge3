@@ -815,6 +815,14 @@ blockquote footer {
     border-color: var(--accent-light-gold);
 }
 
+.mobile-tip {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 0.9em;
+    margin-top: 20px;
+    font-style: italic;
+}
+
 /* Footer */
 footer {
     background: var(--primary-dark);
@@ -877,15 +885,20 @@ footer {
     }
 
     .cert-name {
-        font-size: 2.5em;
+        font-size: 2.2em;
     }
 
     .cert-title {
-        font-size: 2em;
+        font-size: 1.6em;
     }
 
     .cert-content {
-        padding: 40px 30px;
+        padding: 30px 20px;
+    }
+
+    .cert-border {
+        border-width: 8px;
+        padding: 15px;
     }
 
     blockquote {
@@ -923,6 +936,166 @@ footer {
 
     .badge-number {
         font-size: 60px;
+    }
+
+    /* Mobile Modal Improvements */
+    .modal {
+        padding: 10px;
+        align-items: center;
+        display: flex;
+    }
+
+    .modal-content {
+        padding: 20px 15px;
+        width: 100%;
+        max-height: 90vh;
+        overflow-y: auto;
+        margin: auto;
+    }
+
+    .close {
+        font-size: 36px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .cert-emblem {
+        font-size: 50px;
+    }
+
+    .cert-header {
+        margin-bottom: 30px;
+    }
+
+    .cert-text {
+        font-size: 1em;
+    }
+
+    .cert-subtitle {
+        font-size: 0.9em;
+    }
+
+    .cert-details {
+        padding: 20px 15px;
+        gap: 15px;
+        grid-template-columns: 1fr;
+    }
+
+    .cert-detail-item {
+        font-size: 1em;
+        text-align: left;
+    }
+
+    .cert-detail-item strong {
+        font-size: 0.8em;
+    }
+
+    .cert-achievement {
+        font-size: 0.95em;
+        line-height: 1.6;
+        margin: 25px 0;
+    }
+
+    .cert-decoration {
+        font-size: 24px;
+    }
+
+    .cert-decoration-tl { top: 10px; left: 10px; }
+    .cert-decoration-tr { top: 10px; right: 10px; }
+    .cert-decoration-bl { bottom: 10px; left: 10px; }
+    .cert-decoration-br { bottom: 10px; right: 10px; }
+
+    .signature-line,
+    .date-line {
+        width: 150px;
+    }
+
+    .signature-name,
+    .date-value {
+        font-size: 1em;
+    }
+
+    .signature-title,
+    .date-label {
+        font-size: 0.8em;
+    }
+
+    .seal-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .seal-icon {
+        font-size: 24px;
+    }
+
+    .seal-text {
+        font-size: 9px;
+    }
+
+    .seal-year {
+        font-size: 12px;
+    }
+
+    .cert-buttons {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .download-btn,
+    .print-btn {
+        width: 100%;
+        padding: 16px 24px;
+        font-size: 1em;
+    }
+
+    .view-cert-btn {
+        padding: 16px 36px;
+        font-size: 1.1em;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .cert-intro {
+        font-size: 1em;
+    }
+
+    .mobile-tip {
+        font-size: 0.85em;
+        background: rgba(212, 175, 55, 0.1);
+        padding: 10px 15px;
+        border-radius: 12px;
+        margin-top: 15px;
+        border: 1px solid rgba(212, 175, 55, 0.3);
+    }
+}
+
+/* Additional responsive improvements for very small screens */
+@media (max-width: 390px) {
+    .cert-name {
+        font-size: 1.8em;
+    }
+
+    .cert-title {
+        font-size: 1.4em;
+    }
+
+    .cert-content {
+        padding: 25px 15px;
+    }
+
+    .modal-content {
+        padding: 15px 10px;
     }
 }
 
